@@ -78,5 +78,10 @@ Das Anlagenschema bringt integrierte Werkzeuge mit, mit denen du das Layout, die
    * **Transparent / Einfarbig / Verlauf:** Definiere eigene Farben oder Farbverläufe direkt über Farbwähler.
    * **Bild per URL:** Hinterlege ein eigenes Hintergrundbild (z. B. unter `/local/dein-bild.jpg`).
 
-
+> **ℹ️ Wichtiger Hinweis zur Speicherung (Pro-Benutzer-Einstellung):**
+> 
+> Die individuellen Anpassungen (Positionen der Kacheln, Entitäten-Zuordnungen und Hintergründe) werden **lokal im Browser des jeweiligen Geräts/Benutzers** gespeichert. 
+> 
+> * Das bedeutet: Wenn ein anderer Benutzer (oder ein anderes Wandtablet/Smartphone) das Schema aufruft, muss die Karte **einmalig nach den eigenen Wünschen angepasst** werden. 
+> * **Tipp für Admins:** Möchtest du dein gewähltes Layout fest für alle Nutzer als Standard vorgeben? Nutze nach dem Anpassen einfach den **Export**-Button, erstelle die Einstellungen als Standard im Code und speichere sie ab.
 
