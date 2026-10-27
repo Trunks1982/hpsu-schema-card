@@ -50,3 +50,33 @@ Damit die Karte das Schema anzeigen kann, muss die Datei `hpsu-schema.html` auf 
 ## ⚙️ Nutzung im Dashboard
 
 Erstelle ein neues Dashboard. Dann klicke auf Dashboard bearbeiten und stelle das Layout auf Panel um. Wenn dies nicht funktioniert lösche vorher alle Abschnitte oder Kacheln die sich auf dem Dashboard befinden. Jetzt solltest du das Layout ändern können. Jetzt füge eine neue karte hinzu. Suche nach der Karte "Rotex HPSU Schema-Karte", klicke drauf und speicher Sie.
+
+
+---
+
+## 🎨 Anpassungen & Konfiguration
+
+Das Anlagenschema bringt integrierte Werkzeuge mit, mit denen du das Layout, die Entitäten und den Hintergrund direkt im Browser anpassen kannst, ohne den Code mühsam manuell umschreiben zu müssen.
+
+### 1. 📍 Layout bearbeiten & Kacheln verschieben
+1. Öffne die Ansicht mit deiner HPSU-Schema-Karte in Home Assistant.
+2. Über dem Schema siehst du (je nach Modus) Steuerelemente. Klicke auf den Button **Layout bearbeiten**.
+3. Du kannst nun die einzelnen Sensor-Kacheln per Drag-and-Drop mit der Maus an die gewünschte Position auf dem Schema ziehen.
+4. Klicke auf **Speichern**, um die neuen Positionen festzulegen. Über den **Export**-Button kannst du die neuen Koordinaten bei Bedarf direkt auslesen.
+
+### 2. 🔌 Entitäten anpassen
+1. Klicke in der Steuerungsleiste auf den Button **Entitäten**.
+2. Es öffnet sich ein Konfigurationsfenster, in dem alle Kacheln aufgelistet sind.
+3. Du kannst hier jeder Kachel ganz bequem eine andere Home-Assistant-Entity zuweisen oder die Suche/Filterfunktion nutzen. *(Hinweis: Leere Felder blenden die jeweilige Kachel automatisch aus).*
+4. Klicke auf **Speichern**, um die Änderungen für deinen Browser zu übernehmen.
+
+### 3. 🖼️ Hintergrund & Design anpassen
+1. Klicke auf den Button **Hintergrund** (Drop-down-Menü).
+2. Du kannst aus verschiedenen Modi wählen:
+   * **HA-Theme:** Passt sich automatisch an dein aktuelles Home-Assistant-Theme an.
+   * **Dunkel / Hell Standard:** Klassische voreingestellte Farbpaletten.
+   * **Transparent / Einfarbig / Verlauf:** Definiere eigene Farben oder Farbverläufe direkt über Farbwähler.
+   * **Bild per URL:** Hinterlege ein eigenes Hintergrundbild (z. B. unter `/local/dein-bild.jpg`).
+
+
+
