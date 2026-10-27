@@ -2,8 +2,5 @@
   "name": "Rotex HPSU Schema Card",
   "render_readme": true,
   "filename": "hpsu-schema-card.js",
-  "country": ["DE"],
-  "iot_class": "Local Polling",
-  "homeassistant": "2024.1.0",
-  "persistent_directory": true
+  "homeassistant": "2024.1.0"
 }
