@@ -22,6 +22,18 @@ Damit die Karte das Schema anzeigen kann, muss die Datei `hpsu-schema.html` auf 
 
 ---
 
+## 🚀 Schnellinstallation
+
+[![Open your Home Assistant instance and open this repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Trunks1982&repository=hpsu-schema-card&category=dashboard)
+
+1. Klicke auf den Button oben (My Home Assistant). Beim ersten Mal gibst du die Adresse deiner HA-Instanz ein.
+2. Bestätige **Herunterladen** in HACS.
+3. Lade die Oberfläche neu (Strg+F5).
+4. Füge im Dashboard die Karte hinzu:
+
+type: custom:hpsu-schema-card
+
+
 ## 📦 Installation über HACS
 
 1. Öffne **HACS** in deinem Home Assistant.
