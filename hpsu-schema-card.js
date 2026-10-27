@@ -32,7 +32,7 @@ class HpsuSchemaCard extends HTMLElement {
         </style>
         <ha-card>
           <div class="card-content">
-            <iframe src="/local/hpsu-schema.html?v=${Date.now()}"></iframe>
+            <iframe src="/local/community/hpsu-schema-card/hpsu-schema.html?v=${Date.now()}"></iframe>
           </div>
         </ha-card>
       `;
