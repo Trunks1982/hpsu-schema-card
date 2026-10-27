@@ -1,5 +1,6 @@
 {
   "name": "Rotex HPSU Schema Card",
-  "homeassistant": "2024.1.0",
-   "render_readme": true
+  "filename": "hpsu-schema-card.js",
+  "content_in_root": true,
+  "zip_release": true
 }
