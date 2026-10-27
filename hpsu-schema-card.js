@@ -1,17 +1,38 @@
 class HpsuSchemaCard extends HTMLElement {
-  // Zwingend erforderlich für Lovelace Custom Cards!
   setConfig(config) {
     this._config = config;
   }
 
   set hass(hass) {
     this._hass = hass;
-    
+
     if (!this.content) {
       this.innerHTML = `
-        <ha-card header="Rotex HPSU Schema">
-          <div style="padding: 0; overflow: hidden;">
-            <iframe src="/local/hpsu-schema.html?v=${Date.now()}" style="width:100%; height:750px; border:none;"></iframe>
+        <style>
+          ha-card {
+            background: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            height: calc(100vh - 80px) !important;
+            display: flex !important;
+            flex-direction: column !important;
+          }
+          .card-content {
+            flex: 1 !important;
+            height: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+          iframe {
+            width: 100% !important;
+            height: 100% !important;
+            border: none !important;
+            display: block !important;
+          }
+        </style>
+        <ha-card>
+          <div class="card-content">
+            <iframe src="/local/hpsu-schema.html?v=${Date.now()}"></iframe>
           </div>
         </ha-card>
       `;
@@ -20,7 +41,7 @@ class HpsuSchemaCard extends HTMLElement {
   }
 
   getConfigSize() {
-    return 3;
+    return 10;
   }
 }
 
