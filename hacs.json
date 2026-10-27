@@ -1,9 +1,5 @@
 {
   "name": "Rotex HPSU Schema Card",
-  "filename": "hpsu-schema-card.js",
-  "include": [
-    "hpsu-schema.js",
-    "hpsu-schema.html"
-  ],
-  "render_readme": true
+  "render_readme": true,
+  "filename": "hpsu-schema-card.js"
 }
