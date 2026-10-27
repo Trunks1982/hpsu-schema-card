@@ -13,7 +13,7 @@ class HpsuSchemaCard extends HTMLElement {
             background: transparent !important;
             box-shadow: none !important;
             border: none !important;
-            height: calc(100vh - 80px) !important;
+            height: 100% !important;
             display: flex !important;
             flex-direction: column !important;
           }
