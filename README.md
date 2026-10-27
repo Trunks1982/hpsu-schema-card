@@ -2,7 +2,7 @@
 
 Eine benutzerdefinierte Lovelace-Karte (Custom Card) für Home Assistant zur dynamischen Visualisierung des Anlagenschemas einer **Rotex HPSU** Wärmepumpe.
 
-![Vorschau](preview.png)
+![Vorschau](Rotex_Dashboard.png)
 
 ## 🌟 Features
 * **Dynamische Ansicht:** Interaktives SVG-Anlagenschema für die Rotex HPSU.
