@@ -29,7 +29,7 @@ Damit die Karte das Schema anzeigen kann, muss die Datei `hpsu-schema.html` auf 
 1. Klicke auf den Button oben (My Home Assistant). Beim ersten Mal gibst du die Adresse deiner HA-Instanz ein.
 2. Bestätige **Herunterladen** in HACS.
 3. Lade die Oberfläche neu (Strg+F5).
-4. Erstelle ein neues Dashboard. Dann klicke auf Dashboard bearbeiten und stelle das Layout auf Panel um. Wenn dies nicht funktioniert lösche vorher alle Abschnitte oder Kachel die auf der dem Dashboard sind. Jetzt solltest du Layout ändern können. Jetzt füge eine neue karte hinzu. Suche nach der Karte "Rotex HPSU Schema-Karte", klicke drauf und speicher sie.
+4. Erstelle ein neues Dashboard. Dann klicke auf Dashboard bearbeiten und stelle das Layout auf Panel um. Wenn dies nicht funktioniert lösche vorher alle Abschnitte oder Kacheln die sich auf dem Dashboard befinden. Jetzt solltest du das Layout ändern können. Jetzt füge eine neue karte hinzu. Suche nach der Karte "Rotex HPSU Schema-Karte", klicke drauf und speicher Sie.
 
 
 
@@ -49,4 +49,4 @@ Damit die Karte das Schema anzeigen kann, muss die Datei `hpsu-schema.html` auf 
 
 ## ⚙️ Nutzung im Dashboard
 
-Erstelle ein neues Dashboard. Dann klicke auf Dashboard bearbeiten und stelle das Layout auf Panel um. Wenn dies nicht funktioniert lösche vorher alle Abschnitte oder Kachel die auf der dem Dashboard sind. Jetzt solltest du Layout ändern können. Jetzt füge eine neue karte hinzu. Suche nach der Karte "Rotex HPSU Schema-Karte", klicke drauf und speicher sie.
+Erstelle ein neues Dashboard. Dann klicke auf Dashboard bearbeiten und stelle das Layout auf Panel um. Wenn dies nicht funktioniert lösche vorher alle Abschnitte oder Kacheln die sich auf dem Dashboard befinden. Jetzt solltest du das Layout ändern können. Jetzt füge eine neue karte hinzu. Suche nach der Karte "Rotex HPSU Schema-Karte", klicke drauf und speicher Sie.
