@@ -9,16 +9,7 @@ Eine benutzerdefinierte Lovelace-Karte (Custom Card) für Home Assistant zur dyn
 * **HACS-Integration:** Einfache Installation und automatische Updates über HACS.
 * **Kein Caching-Problem:** Automatisches Neuladen des Schemas für immer aktuelle Daten.
 
----
 
-## 📋 Voraussetzungen
-
-Damit die Karte das Schema anzeigen kann, muss die Datei `hpsu-schema.html` auf deinem Home-Assistant-System im `www`-Ordner liegen:
-
-* **Speicherort:** `/config/www/hpsu-schema.html`
-* **Erreichbarkeit:** Über den Webserver unter `/local/hpsu-schema.html`
-
-> **Hinweis:** Falls der Ordner `www` in deinem `/config/`-Verzeichnis noch nicht existiert, erstelle ihn einfach manuell (z. B. über den *Studio Code Server*, *File Editor* oder via *Samba Share*).
 
 ---
 
