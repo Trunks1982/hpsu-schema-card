@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Rotex HPSU · Anlagenschema</title>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rotex HPSU · Anlagenschema</title>
 <style>
-:root{--bg:transparent;--ha-primary-text-color:#e6eef5;--ha-secondary-text-color:#91a4b5;--ha-card-background-color:#101c28;--ink:var(--ha-primary-text-color,#e6eef5);--muted:var(--ha-secondary-text-color,#91a4b5);--line:#294052;--ice:#47c4ed;--hot:#ff825e;--teal:#4dd5bd;--gold:#ffbd67;--ok:#6de2a2;--panel:var(--ha-card-background-color,#101c28);--font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:transparent;color:var(--ink);font-family:var(--font)}main{background:transparent}main{position:relative;width:100%;height:100%;min-width:0;min-height:0}svg#plant{display:block;width:100%;height:100%;overflow:hidden}#plant text{font-family:var(--font);user-select:none}.zone{fill:#13243370;stroke:#51708660;stroke-width:2;stroke-dasharray:8 11}.zlabel{font-size:22.5px;letter-spacing:2px;fill:#a6bdcb;text-transform:uppercase;font-weight:700}.small-label{font-size:19.5px;fill:#9ab2c2;letter-spacing:1px}.hx{stroke:#8eafc055;stroke-width:2}.fins{stroke:#9cb2c03b;stroke-width:2;stroke-linecap:round}.fins rect{fill:#ff825e88}.fanring{fill:#0d1d29;stroke:#41627a;stroke-width:4}.fanblade{fill:#48c4ed65;stroke:#65d6f5;stroke-width:2}.hub{fill:#8ca8b9}.basepipe{fill:none;stroke:#bdced522;stroke-width:20;stroke-linecap:round;stroke-linejoin:round}.pipeColor{fill:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;opacity:.43;transition:opacity .4s}.flow{fill:none;stroke:#f0fbff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 23;opacity:0;filter:drop-shadow(0 0 4px #d3f7ff)}.pipe.active .pipeColor{opacity:.95}.pipe.active .flow{opacity:.95;animation:dash var(--flow-duration,.9s) linear infinite}.pipe.refrigerant .flow{stroke:#fff0d8}.sym{fill:#142633;stroke:#537184;stroke-width:3}.sym.on{stroke:var(--hot);filter:drop-shadow(0 0 9px #ff825e88)}.rotorline{stroke:#d7e7ef;stroke-width:5;stroke-linecap:round}.rot{transform-box:view-box}.rot.on{animation:spin 1s linear infinite}.pump-housing,.pump-housing.on,#pumpc,#pumpc.on{fill:#334957;stroke:#728694;stroke-width:3.5;filter:none}.pump-port{fill:#263c4b;stroke:#7f97a6;stroke-width:3}.pump-port-mark{stroke:#a9bac4;stroke-width:2}.pump-motor{fill:#3a4955;stroke:#718594;stroke-width:2.5}.pump-motor-detail{fill:#243440;stroke:#8295a2;stroke-width:1.5}.pump-detail{fill:none;stroke:#78909f;stroke-width:2}.pump-impeller{fill:#2f5d9e;stroke:#47c4ed;stroke-width:1.5;stroke-linejoin:round}.comp-mark{fill:#2f5d9e;stroke:#d7e7ef;stroke-width:2.5;stroke-linejoin:round}.fan.on{animation:spin var(--fan-duration,1s) linear infinite}.heattank{fill:#10222d;stroke:#597283;stroke-width:4}.tankglass{fill:url(#tankGrad);opacity:.5}.valve path{fill:#b8c8d1;opacity:.8}.coil{stroke:#8aa1b0;stroke-width:3;fill:none;stroke-linecap:round}.sensor-dot{fill:#0d1822;stroke:#82a1b1;stroke-width:3}.tag rect{fill:rgba(7,16,25,.55);stroke:#385165;stroke-width:.8;rx:6;filter:drop-shadow(0 2px 4px #0006)}.tag .accent{stroke-width:2.5;stroke-linecap:round}.tag .label{fill:var(--ha-secondary-text-color,#93a9b8);font-size:9.5px;font-weight:600;letter-spacing:.15px}.tag .value{fill:var(--ha-primary-text-color,#f2f7fa);font-size:14.5px;font-weight:650;font-variant-numeric:tabular-nums}.tag .unit{fill:#9db1bf;font-size:9.5px;font-weight:500}.tag{cursor:pointer;pointer-events:auto;outline:none}.tag rect{transition:fill .16s ease,stroke .16s ease,filter .16s ease}.tag:hover rect,.tag:focus-visible rect{fill:#142b3b;stroke:#78d8f4;stroke-width:2.5;filter:drop-shadow(0 0 8px #47c4ed66)}.tag:focus-visible{outline:none}.tag.status rect{stroke:#4cbd8d}.tag.error rect{stroke:#e78663}.hud{position:absolute;top:clamp(12px,2.2vh,28px);left:clamp(16px,2.4vw,38px);right:clamp(16px,2.4vw,38px);display:flex;align-items:flex-start;justify-content:space-between;gap:14px;pointer-events:none}.brand{display:grid;gap:4px;text-shadow:0 2px 10px #000}.eyebrow{color:#8ca5b7;font-size:clamp(9px,.7vw,12px);font-weight:700;letter-spacing:.19em;text-transform:uppercase}.brand strong{font-size:clamp(14px,1.25vw,21px);letter-spacing:.025em;font-weight:650}.statusline{display:flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid #294255;background:#0b1822dd;border-radius:999px;color:#b8c8d2;font-size:clamp(10px,.75vw,13px);box-shadow:0 5px 20px #0004}.led{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px #6de2a2}.statusline.off .led{background:#697b89;box-shadow:none}.alert{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:14px 20px;border-radius:12px;border:1px solid #894e46;background:#231512;color:#ffc3ad;font-size:15px;box-shadow:0 8px 35px #0009;z-index:4}.alert[hidden]{display:none}@keyframes dash{to{stroke-dashoffset:-48}}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.rot.on,.fan.on,.pipe.active .flow{animation-duration:4s!important}}
+:root{--bg:transparent;--ha-primary-text-color:#e6eef5;--ha-secondary-text-color:#91a4b5;--ha-card-background-color:#101c28;--ink:var(--ha-primary-text-color,#e6eef5);--muted:var(--ha-secondary-text-color,#91a4b5);--line:#294052;--ice:#47c4ed;--hot:#ff825e;--teal:#4dd5bd;--gold:#ffbd67;--ok:#6de2a2;--panel:var(--ha-card-background-color,#101c28);--font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}*{box-sizing:border-box}html,body{display:block;width:100%;height:auto;min-height:0;margin:0;padding:0;overflow-x:hidden;overflow-y:auto;background:transparent;color:var(--ink);font-family:var(--font)}main{position:relative;display:block;width:100%;height:auto;min-width:0;min-height:0;margin:0;padding:0;background:transparent;container-type:inline-size;aspect-ratio:1600/940}#scene{position:absolute;left:0;top:0;width:1600px;height:940px;transform:scale(1);transform-origin:top left}svg#plant{display:block;width:1600px;height:940px;max-width:none;aspect-ratio:1600/940;overflow:hidden;margin:0;padding:0;box-sizing:border-box}#plant text{font-family:var(--font);user-select:none}.zone{fill:#13243370;stroke:#51708660;stroke-width:2;stroke-dasharray:8 11}.zlabel{font-size:22.5px;letter-spacing:2px;fill:#a6bdcb;text-transform:uppercase;font-weight:700}.small-label{font-size:19.5px;fill:#9ab2c2;letter-spacing:1px}.hx{stroke:#8eafc055;stroke-width:2}.fins{stroke:#9cb2c03b;stroke-width:2;stroke-linecap:round}.fins rect{fill:#ff825e88}.fanring{fill:#0d1d29;stroke:#41627a;stroke-width:4}.fanblade{fill:#48c4ed65;stroke:#65d6f5;stroke-width:2}.hub{fill:#8ca8b9}.basepipe{fill:none;stroke:#bdced522;stroke-width:20;stroke-linecap:round;stroke-linejoin:round}.pipeColor{fill:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;opacity:.43;transition:opacity .4s}.flow{fill:none;stroke:#f0fbff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 23;opacity:0;filter:drop-shadow(0 0 4px #d3f7ff)}.pipe.active .pipeColor{opacity:.95}.pipe.active .flow{opacity:.95;animation:dash var(--flow-duration,.9s) linear infinite}.pipe.refrigerant .flow{stroke:#fff0d8}.sym{fill:#142633;stroke:#537184;stroke-width:3}.sym.on{stroke:var(--hot);filter:drop-shadow(0 0 9px #ff825e88)}.rotorline{stroke:#d7e7ef;stroke-width:5;stroke-linecap:round}.rot{transform-box:view-box}.rot.on{animation:spin 1s linear infinite}.pump-housing,.pump-housing.on,#pumpc,#pumpc.on{fill:#334957;stroke:#728694;stroke-width:3.5;filter:none}.pump-port{fill:#263c4b;stroke:#7f97a6;stroke-width:3}.pump-port-mark{stroke:#a9bac4;stroke-width:2}.pump-motor{fill:#3a4955;stroke:#718594;stroke-width:2.5}.pump-motor-detail{fill:#243440;stroke:#8295a2;stroke-width:1.5}.pump-detail{fill:none;stroke:#78909f;stroke-width:2}.pump-impeller{fill:#2f5d9e;stroke:#47c4ed;stroke-width:1.5;stroke-linejoin:round}.comp-mark{fill:#2f5d9e;stroke:#d7e7ef;stroke-width:2.5;stroke-linejoin:round}.fan.on{animation:spin var(--fan-duration,1s) linear infinite}.heattank{fill:#10222d;stroke:#597283;stroke-width:4}.tankglass{fill:url(#tankGrad);opacity:.5}.valve path{fill:#b8c8d1;opacity:.8}.coil{stroke:#8aa1b0;stroke-width:3;fill:none;stroke-linecap:round}.sensor-dot{fill:#0d1822;stroke:#82a1b1;stroke-width:3}.tag rect{fill:rgba(7,16,25,.55);stroke:#385165;stroke-width:.8;rx:6;filter:drop-shadow(0 2px 4px #0006)}.tag .accent{stroke-width:2.5;stroke-linecap:round}.tag .label{fill:var(--ha-secondary-text-color,#93a9b8);font-size:9.5px;font-weight:600;letter-spacing:.15px}.tag .value{fill:var(--ha-primary-text-color,#f2f7fa);font-size:14.5px;font-weight:650;font-variant-numeric:tabular-nums}.tag .unit{fill:#9db1bf;font-size:9.5px;font-weight:500}.tag{cursor:pointer;pointer-events:auto;outline:none}.tag rect{transition:fill .16s ease,stroke .16s ease,filter .16s ease}.tag:hover rect,.tag:focus-visible rect{fill:#142b3b;stroke:#78d8f4;stroke-width:2.5;filter:drop-shadow(0 0 8px #47c4ed66)}.tag:focus-visible{outline:none}.tag.status rect{stroke:#4cbd8d}.tag.error rect{stroke:#e78663}.hud{position:absolute;top:clamp(12px,2.2vh,28px);left:clamp(16px,2.4vw,38px);right:clamp(16px,2.4vw,38px);display:flex;align-items:flex-start;justify-content:space-between;gap:14px;pointer-events:none}.brand{display:grid;gap:4px;text-shadow:0 2px 10px #000}.eyebrow{color:#8ca5b7;font-size:clamp(9px,.7vw,12px);font-weight:700;letter-spacing:.19em;text-transform:uppercase}.brand strong{font-size:clamp(14px,1.25vw,21px);letter-spacing:.025em;font-weight:650}.statusline{display:flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid #294255;background:#0b1822dd;border-radius:999px;color:#b8c8d2;font-size:clamp(10px,.75vw,13px);box-shadow:0 5px 20px #0004}.led{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px #6de2a2}.statusline.off .led{background:#697b89;box-shadow:none}.alert{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:14px 20px;border-radius:12px;border:1px solid #894e46;background:#231512;color:#ffc3ad;font-size:15px;box-shadow:0 8px 35px #0009;z-index:4}.alert[hidden]{display:none}@keyframes dash{to{stroke-dashoffset:-48}}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.rot.on,.fan.on,.pipe.active .flow{animation-duration:4s!important}}
 /* The dash keyframe advances flow in path order. Keep it for bottom-to-top VL, top-to-bottom RL, and right-to-left retLoop geometry; reverse the left-to-right main return toward the pump. */
 .pipe#fbhSupply.active .flow,.pipe#fbhReturn.active .flow,.pipe#retLoop.active .flow{animation-direction:normal}.pipe#ret.active .flow{animation-direction:reverse}#pumprot.on{animation-direction:reverse}
 
@@ -48,8 +48,107 @@
 .zlabel,.small-label{fill:var(--scheme-muted)}.zone{fill:var(--scheme-zone);stroke:var(--scheme-zone-line)}.hx{stroke:var(--scheme-line)}.fins{stroke:var(--scheme-line)}.fanring,.heattank,.sym,.pump-port,.pump-motor,.pump-motor-detail,.sensor-dot{stroke:var(--scheme-line)}.fanring{fill:var(--scheme-tile)}.basepipe{stroke:var(--scheme-line)}.coil,.rotorline,.pump-port-mark,.pump-detail,.ftick,.fanring2,.fins path{stroke:var(--scheme-muted)}.hub,.pump-impeller,.comp-mark,.valve path{stroke:var(--scheme-line)}.tag rect{fill:var(--scheme-tile);stroke:var(--scheme-line)}.tag .label,.tag .unit{fill:var(--scheme-muted)}.tag .value{fill:var(--scheme-text)}.tag:hover rect,.tag:focus-visible rect{fill:var(--scheme-tile);filter:drop-shadow(0 0 8px #47c4ed66)}.tag.status-bubble rect{fill:var(--scheme-tile);stroke:var(--scheme-line)}.tag.status-bubble .label{fill:var(--scheme-muted)}.tag.status-bubble .value{fill:var(--scheme-text)}.tag.status-bubble .bubble-icon{fill:var(--scheme-line);stroke:var(--scheme-muted)}.tag.status-bubble .bubble-icon-text{fill:var(--scheme-text)}.tag.status-bubble:hover rect,.tag.status-bubble:focus-visible rect{fill:var(--scheme-tile)}
 
 .hud>.editor-controls{display:none}body.editmode .hud>.editor-controls,body.standalone .hud>.editor-controls{display:flex}
+
+/* Canvas controls are designed in 1600×940 coordinates too. */
+#scene .hud{top:24px;left:38px;right:38px;align-items:center;gap:14px}
+#scene .eyebrow{font-size:12px}
+#scene .brand strong{font-size:20px}
+#scene .statusline{font-size:13px;padding:9px 13px;gap:9px}
+#scene .editor-controls{gap:8px}
+#scene .editor-controls button{font-size:12px;padding:9px 12px}
+#scene .editor-hint{top:70px}
+#scene .ent-panel{right:28px;top:56px;bottom:16px;width:620px}
+#scene .export-fallback{right:24px;top:90px;width:440px}
+#scene .bg-panel{right:28px;top:56px;width:300px}
+
+/* Leicht vergrößerte Typografie auf schmalen Karten; Layoutkoordinaten und Abstände bleiben unverändert. */
+@container (max-width:900px){
+  #plant .zlabel{font-size:25.65px}
+  #plant .small-label{font-size:22.23px}
+  #plant .small-label[style]{font-size:18.24px!important}
+  #plant .tag .label{font-size:10.83px}
+  #plant .tag .value{font-size:16.53px}
+  #plant .tag.status-bubble .label{font-size:9.69px}
+  #plant .tag.status-bubble .value{font-size:13.68px}
+  #plant .tag.status-bubble .bubble-icon-text{font-size:12.54px}
+  #scene .eyebrow{font-size:13.68px}
+  #scene .brand strong{font-size:22.8px}
+  #scene .statusline{font-size:14.82px}
+  #scene .editor-controls button{font-size:13.68px}
+}
+@container (max-width:600px){
+  #plant .zlabel{font-size:28.575px}
+  #plant .small-label{font-size:24.765px}
+  #plant .small-label[style]{font-size:20.32px!important}
+  #plant .tag .label{font-size:12.065px}
+  #plant .tag .value{font-size:18.415px}
+  #plant .tag.status-bubble .label{font-size:10.795px}
+  #plant .tag.status-bubble .value{font-size:15.24px}
+  #plant .tag.status-bubble .bubble-icon-text{font-size:13.97px}
+  #scene .eyebrow{font-size:15.24px}
+  #scene .brand strong{font-size:25.4px}
+  #scene .statusline{font-size:16.51px}
+  #scene .editor-controls button{font-size:15.24px}
+}
+
+/* 2026-10 responsive readability and viewport-fit revision */
+html{height:100%;min-height:100%;overflow-x:hidden;overflow-y:auto}
+body{height:100%;min-height:100%;margin:0;padding:0;overflow-x:hidden;overflow-y:auto}
+html,body,*{box-sizing:border-box}
+/* Moderate +15% at wide card sizes (baseline applies above 900px). */
+@container (min-width:901px){
+  #plant .zlabel{font-size:25.875px}
+  #plant .small-label{font-size:22.425px}
+  #plant .small-label[style]{font-size:18.4px!important}
+  #plant .tag .label{font-size:10.925px}
+  #plant .tag .value{font-size:16.675px}
+  #plant .tag.status-bubble .label{font-size:9.775px}
+  #plant .tag.status-bubble .value{font-size:13.8px}
+  #plant .tag.status-bubble .bubble-icon-text{font-size:12.65px}
+  #scene .eyebrow{font-size:13.8px}
+  #scene .brand strong{font-size:23px}
+  #scene .statusline{font-size:14.95px}
+  #scene .editor-controls button{font-size:13.8px}
+}
+/* Overlay labels and values +35% for cards up to 900px wide. */
+@container (max-width:900px){
+  #plant .zlabel{font-size:34.6275px}
+  #plant .small-label{font-size:30.0105px}
+  #plant .small-label[style]{font-size:24.624px!important}
+  #plant .tag .label{font-size:14.6205px}
+  #plant .tag .value{font-size:22.3155px}
+  #plant .tag.status-bubble .label{font-size:13.0815px}
+  #plant .tag.status-bubble .value{font-size:18.468px}
+  #plant .tag.status-bubble .bubble-icon-text{font-size:16.929px}
+  #scene .eyebrow{font-size:15.732px}
+  #scene .brand strong{font-size:26.22px}
+  #scene .statusline{font-size:17.043px}
+  #scene .editor-controls button{font-size:15.732px}
+}
+/* The existing <=600px scaling was already enlarged; increase it by another 35%. */
+@container (max-width:600px){
+  #plant .zlabel{font-size:38.57625px}
+  #plant .small-label{font-size:33.43275px}
+  #plant .small-label[style]{font-size:27.432px!important}
+  #plant .tag .label{font-size:16.28775px}
+  #plant .tag .value{font-size:24.86025px}
+  #plant .tag.status-bubble .label{font-size:14.57325px}
+  #plant .tag.status-bubble .value{font-size:20.574px}
+  #plant .tag.status-bubble .bubble-icon-text{font-size:18.8595px}
+  #scene .eyebrow{font-size:17.526px}
+  #scene .brand strong{font-size:29.21px}
+  #scene .statusline{font-size:18.9865px}
+  #scene .editor-controls button{font-size:17.526px}
+}
+/* 2026-10-28: mobile SVG value tags — restrain font growth and preserve label/value line spacing. Pipe/component geometry and fixed vertical labels remain untouched. */
+@container (max-width:900px){
+ #plant .tag .label{font-size:13.5px}
+ #plant .tag .value{font-size:18.5px}
+ #plant .tag.status-bubble .label{font-size:10.8px}
+ #plant .tag.status-bubble .value{font-size:15.5px}
+}
 </style></head>
-<body><main><div class="hud"><div class="statusline" id="status"><i class="led"></i><span id="statusText">Verbindung wird geprüft</span></div><div class="editor-controls" aria-label="Schema-Werkzeuge"><button id="entBtn" type="button" aria-pressed="false" title="Entities zuordnen und ändern">Entitäten</button><button id="bgBtn" type="button" aria-expanded="false" aria-controls="bgPanel">Hintergrund</button><button id="editBtn" type="button" aria-pressed="false">Layout bearbeiten</button><button id="saveBtn" type="button" hidden>Speichern</button><button id="cancelBtn" type="button" hidden>Abbrechen</button><button id="exportBtn" type="button" title="Positionen als EMBEDDED_POSITIONS kopieren">Export</button><button id="resetBtn" class="danger" type="button" title="Gespeichertes Layout löschen und auf Standard zurücksetzen">Zurücksetzen</button></div></div><div class="alert" id="accessError" hidden>Kein Zugriff auf Home Assistant</div><div class="editor-hint" id="editHint" hidden>Tags ziehen · Speichern übernimmt das Layout, Abbrechen verwirft Änderungen</div><div class="export-fallback" id="exportFallback" hidden><label for="exportText">Zwischenablage nicht verfügbar – Exporttext markieren und kopieren:</label><textarea id="exportText" readonly spellcheck="false"></textarea></div>
+<body><main><div id="scene"><div class="hud"><div class="statusline" id="status"><i class="led"></i><span id="statusText">Verbindung wird geprüft</span></div><div class="editor-controls" aria-label="Schema-Werkzeuge"><button id="entBtn" type="button" aria-pressed="false" title="Entities zuordnen und ändern">Entitäten</button><button id="bgBtn" type="button" aria-expanded="false" aria-controls="bgPanel">Hintergrund</button><button id="editBtn" type="button" aria-pressed="false">Layout bearbeiten</button><button id="saveBtn" type="button" hidden>Speichern</button><button id="cancelBtn" type="button" hidden>Abbrechen</button><button id="exportBtn" type="button" title="Positionen als EMBEDDED_POSITIONS kopieren">Export</button><button id="resetBtn" class="danger" type="button" title="Gespeichertes Layout löschen und auf Standard zurücksetzen">Zurücksetzen</button></div></div><div class="alert" id="accessError" hidden>Kein Zugriff auf Home Assistant</div><div class="editor-hint" id="editHint" hidden>Tags ziehen · Speichern übernimmt das Layout, Abbrechen verwirft Änderungen</div><div class="export-fallback" id="exportFallback" hidden><label for="exportText">Zwischenablage nicht verfügbar – Exporttext markieren und kopieren:</label><textarea id="exportText" readonly spellcheck="false"></textarea></div>
 <div class="bg-panel" id="bgPanel" hidden role="dialog" aria-label="Hintergrund einstellen">
 <label class="bg-field" for="bgMode">Hintergrundmodus</label><select id="bgMode"><option value="ha">HA-Theme</option><option value="dark">Dunkel Standard</option><option value="light">Hell Standard</option><option value="transparent">Transparent</option><option value="solid">Einfarbig</option><option value="gradient">Verlauf</option><option value="image">Bild per URL</option></select>
 <div class="bg-theme-options" id="bgThemeOptions" hidden><label class="bg-field" for="bgTheme">Theme</label><select id="bgTheme"><option value="">Aktuelles HA-Theme</option></select><p class="bg-hint" id="bgHint" role="status"></p></div>
@@ -96,12 +195,13 @@
 <g class="valve" aria-label="3-Wege-Ventil am Bypass-Abzweig"><path d="M1324 586L1350 600L1324 614Z M1376 586L1350 600L1376 614Z M1336 572H1364L1350 600Z"/></g>
 <!-- Heizstab (Tauchheizkörper) von oben im Warmwasserspeicher --><g id="buh"><path d="M914 704V738L905 746L923 754L905 762L923 770L905 778L923 786L905 794L923 802L905 810L923 818L905 826L923 834L905 842L923 850L905 858L923 866L905 874L914 882" fill="none" stroke="#0d1822" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/><path class="coil" d="M914 704V738L905 746L923 754L905 762L923 770L905 778L923 786L905 794L923 802L905 810L923 818L905 826L923 834L905 842L923 850L905 858L923 866L905 874L914 882" stroke-linejoin="round"/><rect class="sym" x="902" y="690" width="24" height="14" rx="4"/></g>
 <!-- Sensorpunkte / zusätzliche Leitungslabels -->
-<text class="small-label" x="1545" y="410" text-anchor="middle">Heizkreis</text>
+<text class="small-label" x="1528" y="410" text-anchor="middle" transform="rotate(-90 1528 410)" style="font-size:16px;letter-spacing:.6px">HEIZKREIS</text>
 <text class="small-label" x="1415" y="82" text-anchor="middle" fill="#47c4ed" style="font-size:16px">RL FBH</text>
 <text class="small-label" x="1515" y="82" text-anchor="middle" fill="#ff825e" style="font-size:16px">VL FBH</text>
+<text class="small-label" x="1378" y="410" text-anchor="middle" transform="rotate(-90 1378 410)" style="font-size:16px;letter-spacing:.6px">Bypass</text>
 <g class="fins"><path d="M570 220v-52 M420 205v-27 M225 680v20 M440 640v24 M610 600v64 M1060 204v-46 M1250 220v-62 M870 600v-58 M1050 600v-58 M1320 600v-58"/></g>
 <g class="sensor-dot"><circle cx="570" cy="220" r="7"/><circle cx="610" cy="600" r="7"/><circle cx="1250" cy="220" r="7"/><circle cx="870" cy="600" r="7"/><circle cx="1050" cy="600" r="7"/><circle cx="1320" cy="600" r="7"/><circle cx="1140" cy="600" r="5"/><circle cx="1350" cy="220" r="5"/><circle cx="1445" cy="220" r="5"/><circle cx="1500" cy="115" r="4"/></g>
-<g id="tags"></g></svg></main>
+<g id="tags"></g></svg></div></main>
 <script>
 'use strict';
 
@@ -208,7 +308,7 @@ const ENTITY_BASE = {};
 const ENTITIES = {...ENTITY_DEFAULTS};
 const LABELS={ta:'Außentemperatur',ta2:'Außenfühler TA2',expansion_valve:'Expansionsventil',pressure_equalization:'Druckausgleich',kondensat:'Flüssigkeitsleitung',umwaelzpumpe:'Umwälzpumpe',umwaelzpumpe_an_aus:'Pumpenstatus',durchfluss:'Durchfluss',ruecklauf_1:'Rücklauf Heizkreis',ruecklauf_2:'Rücklauf seriell',verdampfer:'Verdampfer',hot_gas:'Heißgas',spread:'Spreizung',vorlauf_1:'Vorlauf Heizkreis',vorlauf_2:'Vorlauf seriell',vorlauf_soll:'Vorlauf Soll',wasserdruck:'Wasserdruck',vorlauf_bh_1:'Vorlauf BH',vorlauf_bh_2:'Vorlauf BH seriell',kompressor_an_aus:'Kompressorstatus',luefter:'Lüfter',verdichter:'Verdichter',speicher:'Warmwasserspeicher',speicher_soll:'Speicher Soll',mischer:'DHW-Mischer',bypass:'Bypass',fehlercode:'Fehlercode',betriebsmodus:'Betriebsmodus',betriebsart:'Betriebsart',thermische_leistung:'Thermische Leistung',el_power:'Elektrische Leistung',cop:'COP',buh_power:'Heizstab'};
 // Positionen folgen der originalen Schema-Karte; übrige Entity-Werte ergänzen die freien Randzonen.
-const POS={ta:[100,105],ta2:[260,105],expansion_valve:[420,105],kondensat:[580,105],verdampfer:[260,710],verdichter:[460,710],hot_gas:[540,760],luefter:[105,545],umwaelzpumpe:[880,103],durchfluss:[1080,145],ruecklauf_1:[1270,135],spread:[850,335],vorlauf_soll:[1100,335],vorlauf_1:[870,505],wasserdruck:[1080,505],vorlauf_bh_1:[1220,435],speicher:[700,655],speicher_soll:[700,720],pressure_equalization:[535,280],umwaelzpumpe_an_aus:[130,850],ruecklauf_2:[1260,300],vorlauf_2:[535,445],vorlauf_bh_2:[1190,510],kompressor_an_aus:[520,510],mischer:[1280,680],bypass:[1430,680],fehlercode:[340,850],betriebsmodus:[550,895],betriebsart:[760,895],thermische_leistung:[760,850],el_power:[130,895],cop:[550,850],buh_power:[760,800]};
+const POS={ta:[95,105],ta2:[300,105],expansion_valve:[505,105],kondensat:[710,105],verdampfer:[260,710],verdichter:[460,710],hot_gas:[540,760],luefter:[105,545],umwaelzpumpe:[880,103],durchfluss:[1080,145],ruecklauf_1:[1270,135],spread:[850,335],vorlauf_soll:[1100,335],vorlauf_1:[870,505],wasserdruck:[1060,505],vorlauf_bh_1:[1220,435],speicher:[700,655],speicher_soll:[700,720],pressure_equalization:[535,280],umwaelzpumpe_an_aus:[130,850],ruecklauf_2:[1260,300],vorlauf_2:[535,445],vorlauf_bh_2:[1280,550],kompressor_an_aus:[520,510],mischer:[1280,680],bypass:[1430,680],fehlercode:[340,850],betriebsmodus:[550,895],betriebsart:[760,895],thermische_leistung:[760,850],el_power:[130,895],cop:[550,850],buh_power:[760,800]};
 const EMBEDDED_POSITIONS = {};
 const svgNS='http://www.w3.org/2000/svg';const tags=document.getElementById('tags');
 const DEFAULT_POSITIONS=Object.fromEntries(Object.entries(POS).map(([key,point])=>[key,[...point]]));
@@ -260,8 +360,8 @@ function openMoreInfo(entityId){
   }
   console.warn(`More-Info-Dialog konnte für ${entityId} nicht geöffnet werden`,parentError||new Error('Home Assistant Event-Ziel nicht verfügbar'));
 }
-function fitTag(g){const rect=g.querySelector('rect'),label=g.querySelector('.label'),value=g.querySelector('.value'),bubble=g.classList.contains('status-bubble');let width;if(bubble){width=Math.ceil(Math.max(132,label.getComputedTextLength()+49,value.getComputedTextLength()+49));rect.setAttribute('rx','18');rect.setAttribute('height','36');label.setAttribute('x','36');label.setAttribute('y','12');value.setAttribute('x','36');value.setAttribute('y','27');g.querySelector('.bubble-icon').setAttribute('cx','18');g.querySelector('.bubble-icon').setAttribute('cy','18');g.querySelector('.bubble-icon-text').setAttribute('x','18');g.querySelector('.bubble-icon-text').setAttribute('y','22')}else{width=Math.ceil(Math.max(68,label.getComputedTextLength()+22,value.getComputedTextLength()+22));rect.setAttribute('rx','6')}rect.setAttribute('width',width);rect.setAttribute('height',36);const [cx,cy]=g.dataset.center.split(',').map(Number);g.setAttribute('transform',`translate(${cx-width/2} ${cy-18})`)}
-function makeTags(){const bubbles={umwaelzpumpe_an_aus:'↻',fehlercode:'!',cop:'◎',thermische_leistung:'♨',el_power:'ϟ',betriebsmodus:'M',betriebsart:'A'};for(const [key,id] of Object.entries(ENTITIES)){const [x,y]=window.savedPositions[key]||POS[key];const g=document.createElementNS(svgNS,'g');const isBubble=Object.prototype.hasOwnProperty.call(bubbles,key);g.setAttribute('class','tag'+(isBubble?' status-bubble':''));g.dataset.key=key;g.dataset.center=`${x},${y}`;g.innerHTML=isBubble?`<rect width="132" height="36" rx="18"/><circle class="bubble-icon" cx="18" cy="18" r="10"/><text class="bubble-icon-text" x="18" y="22" text-anchor="middle">${bubbles[key]}</text><text class="label" x="36" y="12">${LABELS[key]}</text><text class="value" x="36" y="27" data-val="${key}">–</text>`:`<rect width="68" height="36"/><path class="accent" d="M5 8v20" stroke="${['ta','ta2','verdampfer','ruecklauf_1','ruecklauf_2','luefter'].includes(key)?'#47c4ed':['hot_gas','expansion_valve','vorlauf_1','vorlauf_2','vorlauf_soll','vorlauf_bh_1','vorlauf_bh_2','speicher','speicher_soll','thermische_leistung','buh_power'].includes(key)?'#ff825e':'#4dd5bd' }"/><text class="label" x="11" y="12">${LABELS[key]}</text><text class="value" x="11" y="28" data-val="${key}">–</text>`;tags.appendChild(g);fitTag(g);g.addEventListener('pointerdown',beginDrag);g.addEventListener('click',event=>{if(editMode)event.preventDefault();else if(ENTITIES[key])openMoreInfo(ENTITIES[key])});g.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();if(!editMode&&ENTITIES[key])openMoreInfo(ENTITIES[key])}});g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',LABELS[key])}document.getElementById('plant').appendChild(tags)}
+function fitTag(g){const rect=g.querySelector('rect'),label=g.querySelector('.label'),value=g.querySelector('.value'),bubble=g.classList.contains('status-bubble');let width;if(bubble){width=Math.ceil(Math.max(132,label.getComputedTextLength()+49,value.getComputedTextLength()+49));rect.setAttribute('rx','18');rect.setAttribute('height','36');label.setAttribute('x','36');label.setAttribute('y','12');value.setAttribute('x','36');value.setAttribute('y','30');g.querySelector('.bubble-icon').setAttribute('cx','18');g.querySelector('.bubble-icon').setAttribute('cy','18');g.querySelector('.bubble-icon-text').setAttribute('x','18');g.querySelector('.bubble-icon-text').setAttribute('y','22')}else{width=Math.ceil(Math.max(68,label.getComputedTextLength()+22,value.getComputedTextLength()+22));rect.setAttribute('rx','6')}rect.setAttribute('width',width);rect.setAttribute('height',36);const [cx,cy]=g.dataset.center.split(',').map(Number);const S=1;g.setAttribute('transform',`translate(${cx-width*S/2} ${cy-18*S}) scale(${S})`)}
+function makeTags(){const bubbles={umwaelzpumpe_an_aus:'↻',fehlercode:'!',cop:'◎',thermische_leistung:'♨',el_power:'ϟ',betriebsmodus:'M',betriebsart:'A'};for(const [key,id] of Object.entries(ENTITIES)){const [x,y]=window.savedPositions[key]||POS[key];const g=document.createElementNS(svgNS,'g');const isBubble=Object.prototype.hasOwnProperty.call(bubbles,key);g.setAttribute('class','tag'+(isBubble?' status-bubble':''));g.dataset.key=key;g.dataset.center=`${x},${y}`;g.innerHTML=isBubble?`<rect width="132" height="36" rx="18"/><circle class="bubble-icon" cx="18" cy="18" r="10"/><text class="bubble-icon-text" x="18" y="22" text-anchor="middle">${bubbles[key]}</text><text class="label" x="36" y="12">${LABELS[key]}</text><text class="value" x="36" y="30" data-val="${key}">–</text>`:`<rect width="68" height="36"/><path class="accent" d="M5 8v20" stroke="${['ta','ta2','verdampfer','ruecklauf_1','ruecklauf_2','luefter'].includes(key)?'#47c4ed':['hot_gas','expansion_valve','vorlauf_1','vorlauf_2','vorlauf_soll','vorlauf_bh_1','vorlauf_bh_2','speicher','speicher_soll','thermische_leistung','buh_power'].includes(key)?'#ff825e':'#4dd5bd' }"/><text class="label" x="11" y="11">${LABELS[key]}</text><text class="value" x="11" y="30" data-val="${key}">–</text>`;tags.appendChild(g);fitTag(g);g.addEventListener('pointerdown',beginDrag);g.addEventListener('click',event=>{if(editMode)event.preventDefault();else if(ENTITIES[key])openMoreInfo(ENTITIES[key])});g.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();if(!editMode&&ENTITIES[key])openMoreInfo(ENTITIES[key])}});g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',LABELS[key])}document.getElementById('plant').appendChild(tags)}
 function stateFor(hass,key){return hass?.states?.[ENTITIES[key]]}
 function valueOf(hass,key){const s=stateFor(hass,key);if(!s||['unavailable','unknown','none',''].includes(String(s.state).toLowerCase()))return{value:'–',num:NaN,unit:''};let v=String(s.state),n=Number(s.state),unit=s.attributes?.unit_of_measurement||'';if(Number.isFinite(n)){v=new Intl.NumberFormat('de-DE',{maximumFractionDigits:1}).format(n)}else if(key==='pressure_equalization'||key==='umwaelzpumpe_an_aus'||key==='kompressor_an_aus'){v=(s.state==='on'?'Ein':s.state==='off'?'Aus':v)}return{value:v,num:Number.isFinite(n)?n:NaN,unit}}
 function setTag(hass,key){const out=valueOf(hass,key);const el=tags.querySelector(`[data-key="${key}"] .value`);if(!el)return;el.textContent=out.value+(out.unit?` ${out.unit}`:'');const g=el.closest('.tag');if(g.classList.contains('status-bubble')){const state=String(stateFor(hass,key)?.state||'').toLowerCase();g.classList.toggle('bubble-on',(key==='umwaelzpumpe_an_aus'&&state==='on')||(key==='fehlercode'&&['0','none','no error','kein fehler',''].includes(state)));g.classList.toggle('bubble-error',key==='fehlercode'&&!!state&&!['0','none','no error','kein fehler','unavailable','unknown'].includes(state))}fitTag(g)}
@@ -296,8 +396,23 @@ document.getElementById('entExportBtn').addEventListener('click',exportEntities)
 document.getElementById('entReset').addEventListener('click',()=>{entDraft={...ENTITY_BASE};for(const row of document.querySelectorAll('#entRows .ent-row')){row.querySelector('input').value=entDraft[row.dataset.key]||'';updateEntityHint(row)}});
 document.getElementById('entFilter').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();for(const row of document.querySelectorAll('#entRows .ent-row')){const key=row.dataset.key,hay=`${LABELS[key]||''} ${key} ${(entDraft&&entDraft[key])||''}`.toLowerCase();row.hidden=!!q&&!hay.includes(q)}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('entPanel').hidden)closeEntityPanel()});
-loadInitialEntities();makeTags();applyEntityVisibility();refresh();loadConfigFromServer();setInterval(refresh,1000);
+
+/* ---- Schema-only render: scale to card width and available height ---- */
+function applySchemaScale(){
+ const host=document.querySelector('body > main'),scene=document.getElementById('scene');
+ if(!host||!scene)return;
+ const width=host.clientWidth||document.documentElement.clientWidth||window.innerWidth;
+ const height=window.innerHeight||0;
+ const scale=height>0?Math.min(width/1600,height/940):width/1600;
+ scene.style.transform=`scale(${scale})`;
+ host.style.height=`${940*scale}px`;
+ for(const g of tags.querySelectorAll('.tag'))fitTag(g);
+}
+window.addEventListener('resize',applySchemaScale);
+if(window.ResizeObserver){const sizeObserver=new ResizeObserver(applySchemaScale);sizeObserver.observe(document.querySelector('body > main'));}
+loadInitialEntities();makeTags();applyEntityVisibility();refresh();applySchemaScale();loadConfigFromServer();setInterval(refresh,1000);
 </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","spa":2}' crossorigin="anonymous"></script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","spa":2}' crossorigin="anonymous"></script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","spa":2}' crossorigin="anonymous"></script>
 </body></html>
