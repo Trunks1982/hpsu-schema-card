@@ -7,6 +7,10 @@ class HpsuSchemaCard extends HTMLElement {
     this._hass = hass;
 
     if (!this.content) {
+      // Wenn du HACS nutzt, ist der Pfad /hacsfiles/hpsu-schema-card/hpsu-schema.html
+      // Wenn du es manuell im www-Ordner hast, ist der Pfad /local/hpsu-schema.html
+      const htmlUrl = `/hacsfiles/hpsu-schema-card/hpsu-schema.html?v=${Date.now()}`;
+
       this.innerHTML = `
         <style>
           ha-card {
@@ -32,7 +36,7 @@ class HpsuSchemaCard extends HTMLElement {
         </style>
         <ha-card>
           <div class="card-content">
-            <iframe src="url: '/local/hpsu-schema.html'?v=${Date.now()}"></iframe>
+            <iframe src="${htmlUrl}"></iframe>
           </div>
         </ha-card>
       `;
@@ -40,7 +44,7 @@ class HpsuSchemaCard extends HTMLElement {
     }
   }
 
-  getConfigSize() {
+  getCardSize() {
     return 10;
   }
 }
