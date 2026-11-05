@@ -1,12 +1,9 @@
-# Rotex HPSU Schema Card für Home Assistant
-
-Eine benutzerdefinierte Lovelace-Karte (Custom Card) für Home Assistant zur dynamischen Visualisierung des Anlagenschemas einer **Rotex HPSU** Wärmepumpe.
-
-![Vorschau](Rotex_Dashboard.png)
-
 # Rotex HPSU Schema Card
 
 Eine Custom-Lovelace-Karte für Home Assistant, die den Betrieb einer Rotex HPSU als animiertes Anlagenschema darstellt. Temperaturen, Statuswerte und Leistungsdaten werden in verschiebbaren Kacheln angezeigt. Die Sensoren werden anhand eines gemeinsamen Präfixes zugeordnet oder können einzeln konfiguriert werden.
+
+
+![Vorschau](Rotex_Dashboard.png)
 
 ## Features
 
