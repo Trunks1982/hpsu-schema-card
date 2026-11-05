@@ -157,4 +157,7 @@ Positionen werden lokal im Browser (`localStorage`, layoutbezogener Schlüssel `
 
 ## Lizenz
 
-**[Lizenz hier eintragen]** — Im untersuchten JavaScript-Code war keine Lizenzangabe enthalten. Bitte vor Veröffentlichung die vom Projekt gewählte Lizenz ergänzen.
+
+## Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz. Siehe die Datei [LICENSE](LICENSE).
