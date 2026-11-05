@@ -157,6 +157,9 @@ Positionen werden lokal im Browser (`localStorage`, layoutbezogener Schlüssel `
 
 ## Lizenz
 
+## Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz. Siehe die Datei [LICENSE](LICENSE).
 
 ## Lizenz
 
