@@ -13,6 +13,8 @@ Eine Custom-Lovelace-Karte für Home Assistant, die den Betrieb einer Rotex HPSU
 - Automatische Zuordnung über `prefix` sowie optionale individuelle Entitäten, Labels und zusätzliche Kacheln.
 - Einstellbare Darstellung und Hintergrund; die Karte skaliert proportional mit ihrer Breite.
 - Positionen der Messwertkacheln können im Home-Assistant-Dashboard angepasst werden.
+- Auswahl der Ausseneinheiten 4kw - 8kw (ein Lüfter) und 11kw - 16kw (zwei Lüfter).
+
 
 ## Voraussetzungen
 
